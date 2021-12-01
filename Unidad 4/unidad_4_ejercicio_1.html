@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Unidad 4 - Ej. I</title>
+</head>
+<body>
+    <div id="cajaRoja"></div>
+    <div id="cajaVerde"></div>
+    <div id="cajaAzul"></div>
+</body>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+        }
+        #cajaRoja {
+            background-color: red;
+        }
+        #cajaVerde {
+            background-color: green;
+        }
+        #cajaAzul {
+            background-color: blue;
+        }
+    </style>
+
+    <script>
+        document.getElementById("cajaRoja").addEventListener("click", function(e) {document.body.style.backgroundColor = "red"});
+        document.getElementById("cajaVerde").addEventListener("click", function(e) {document.body.style.backgroundColor = "green"});
+        document.getElementById("cajaAzul").addEventListener("click", function(e) {document.body.style.backgroundColor = "blue"});
+    </script>
+</html>
